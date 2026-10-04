@@ -1,0 +1,73 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --color-primary: #001428;
+    --color-primary-container: #0f2942;
+    --color-on-primary: #ffffff;
+    --color-on-primary-container: #7991af;
+    --color-secondary: #735c00;
+    --color-secondary-container: #fed65b;
+    --color-secondary-fixed: #ffe088;
+    --color-surface: #fbf9f5;
+    --color-surface-dim: #dbdad6;
+    --color-surface-container-lowest: #ffffff;
+    --color-surface-container-low: #f5f3ef;
+    --color-surface-container: #efeeea;
+    --color-surface-container-high: #eae8e4;
+    --color-surface-container-highest: #e4e2de;
+    --color-on-surface: #1b1c1a;
+    --color-on-surface-variant: #43474d;
+    --color-outline: #74777e;
+    --color-outline-variant: #c3c6ce;
+    --color-tertiary: #001524;
+    --color-tertiary-container: #002a44;
+  }
+
+  html,
+  body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    min-height: 100%;
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background-color: #fbf9f5;
+    color: #1b1c1a;
+  }
+
+  h1, h2, h3, .font-serif, .font-display {
+    font-family: 'Playfair Display', Georgia, Cambria, 'Times New Roman', serif;
+  }
+}
+
+.material-symbols-outlined {
+  font-family: 'Material Symbols Outlined';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Utilities */
+.scrollbar-none::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-none {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.pb-safe {
+  padding-bottom: calc(env(safe-area-inset-bottom, 0px) + 5rem);
+}
+
+.pt-safe {
+  padding-top: env(safe-area-inset-top, 0px);
+}

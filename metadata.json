@@ -1,0 +1,8 @@
+{
+  "name": "Mount Carmel Global School",
+  "description": "Official website for Mount Carmel Global School, Kondapur, Hyderabad. Holistic education from PP1 to Class 10 with future-ready AI learning, academic excellence, and world-class campus facilities.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
